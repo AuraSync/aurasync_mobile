@@ -1,7 +1,10 @@
 {
   "cSpell.words": [
     "aurasync",
-    "cupertino"
+    "cupertino",
+    "kotlin",
+    "softyes"
   ],
-  "dart.flutterSdkPath": ".fvm/versions/stable"
+  "dart.flutterSdkPath": ".fvm/versions/stable",
+  "java.configuration.updateBuildConfiguration": "disabled"
 }
