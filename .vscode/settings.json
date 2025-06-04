@@ -6,5 +6,6 @@
     "softyes"
   ],
   "dart.flutterSdkPath": ".fvm/versions/stable",
-  "java.configuration.updateBuildConfiguration": "disabled"
+  "java.configuration.updateBuildConfiguration": "disabled",
+  "makefile.configureOnOpen": false
 }
