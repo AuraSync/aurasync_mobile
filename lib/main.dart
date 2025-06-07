@@ -36,7 +36,7 @@ final class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    Modular.setInitialRoute(AppRoutes.root);
+    Modular.setInitialRoute(AppRoutes.home);
   }
 
   @override
