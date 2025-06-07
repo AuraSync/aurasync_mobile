@@ -9,12 +9,15 @@ final class _ScreenScaffoldWidget extends StatelessWidget with AppThemeMixin {
     final inherited = _ScreenInheritedWidget.of(context);
 
     return Scaffold(
-      extendBody: true,
-      extendBodyBehindAppBar: true,
       backgroundColor: colors.surface,
-      body: Center(child: inherited.body),
-      bottomNavigationBar: inherited.bottom,
+      extendBody: inherited.extendBody,
+      extendBodyBehindAppBar: inherited.extendBody,
       appBar: _buildAppBar(metrics, inherited),
+      bottomNavigationBar: inherited.bottom,
+      body: Padding(
+        padding: inherited.padding,
+        child: Center(child: inherited.body),
+      ),
     );
   }
 

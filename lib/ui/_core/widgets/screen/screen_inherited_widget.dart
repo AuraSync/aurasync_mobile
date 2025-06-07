@@ -2,6 +2,8 @@ part of 'screen_widget.dart';
 
 final class _ScreenInheritedWidget extends InheritedWidget {
   const _ScreenInheritedWidget({
+    required this.extendBody,
+    required this.padding,
     required this.body,
     required this.appBar,
     required this.bottom,
@@ -23,6 +25,8 @@ final class _ScreenInheritedWidget extends InheritedWidget {
     return instance;
   }
 
+  final bool extendBody;
+  final EdgeInsets padding;
   final Widget? body;
   final Widget? appBar;
   final Widget? bottom;
@@ -33,6 +37,7 @@ final class _ScreenInheritedWidget extends InheritedWidget {
     return oldWidget.body != body ||
         oldWidget.appBar != appBar ||
         oldWidget.bottom != bottom ||
-        oldWidget.sidebar != sidebar;
+        oldWidget.sidebar != sidebar ||
+        oldWidget.padding != padding;
   }
 }

@@ -9,6 +9,8 @@ part 'screen_widget_controller.dart';
 
 final class ScreenWidget extends StatefulWidget {
   const ScreenWidget({
+    this.extendBody = false,
+    this.padding = EdgeInsets.zero,
     this.body,
     this.appBar,
     this.bottom,
@@ -17,6 +19,8 @@ final class ScreenWidget extends StatefulWidget {
     super.key,
   });
 
+  final bool extendBody;
+  final EdgeInsets padding;
   final Widget? body;
   final Widget? appBar;
   final Widget? bottom;
@@ -96,6 +100,8 @@ final class _ScreenWidgetState extends State<ScreenWidget>
         appBar: widget.appBar,
         bottom: widget.bottom,
         sidebar: widget.sidebar,
+        padding: widget.padding,
+        extendBody: widget.extendBody,
         child: const _ScreenScaffoldWidget(),
       );
     }
@@ -105,6 +111,8 @@ final class _ScreenWidgetState extends State<ScreenWidget>
       appBar: widget.appBar,
       bottom: widget.bottom,
       sidebar: widget.sidebar,
+      padding: widget.padding,
+      extendBody: widget.extendBody,
       child: Stack(
         fit: StackFit.expand,
         alignment: Alignment.center,
