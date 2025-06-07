@@ -3,6 +3,7 @@
     "aurasync",
     "cupertino",
     "kotlin",
+    "pubspec",
     "softyes"
   ],
   "dart.flutterSdkPath": ".fvm/versions/stable",
