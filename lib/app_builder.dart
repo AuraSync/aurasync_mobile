@@ -10,7 +10,7 @@ class AppBuilder extends StatelessWidget with AppThemeMixin {
   @override
   Widget build(BuildContext context) {
     _setSystemUI(context);
-    return Material(type: MaterialType.transparency, child: child);
+    return Material(child: child);
   }
 
   void _setSystemUI(BuildContext context) {
