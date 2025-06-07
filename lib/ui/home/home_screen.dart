@@ -7,16 +7,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 part 'home_module.dart';
+part 'widgets/home_device_widget.dart';
 
 final class _HomeScreen extends StatelessWidget with AppThemeMixin {
   const _HomeScreen();
 
   @override
   Widget build(BuildContext context) {
-    final metrics = getThemeMetrics(context);
+    final (colors, metrics) = getTheme(context);
     final controller = Modular.get<ScreenWidgetController>();
 
     return ScreenWidget(
+      padding: EdgeInsets.all(metrics.medium),
       appBar: AppBarWidget(
         title: 'AuraSync',
         leading: IconButtonWidget(
@@ -29,13 +31,24 @@ final class _HomeScreen extends StatelessWidget with AppThemeMixin {
         spacing: metrics.small,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          ImageWidget(
-            width: 80,
-            fit: BoxFit.contain,
-            package: 'aurasync_ui',
-            uri: Uri.parse('assets/logo.png'),
+          const _HomeDeviceWidget(),
+          Expanded(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ImageWidget(
+                  width: 80,
+                  fit: BoxFit.contain,
+                  package: 'aurasync_ui',
+                  uri: Uri.parse('assets/logo.png'),
+                ),
+                const TextWidget(
+                  'AuraSync',
+                  type: TextWidgetType.headlineSmall,
+                ),
+              ],
+            ),
           ),
-          const TextWidget('AuraSync', type: TextWidgetType.headlineSmall),
         ],
       ),
     );
