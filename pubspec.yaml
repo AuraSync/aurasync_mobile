@@ -1,8 +1,11 @@
 name: aurasync
 description: "AuraSync connects your Android to your PC or Mac for remote control, mirroring and real-time data exchange via USB or local network."
 
-version: 0.1.0+1
+version: 0.2.0+2
 publish_to: "none"
+
+homepage: https://softyes.com.br
+repository: https://github.com/ZinChat/zinchat_mobile
 
 environment:
   sdk: ^3.8.1
@@ -12,8 +15,8 @@ dependencies:
   flutter:
     sdk: flutter
 
-  cupertino_icons: ^1.0.8
   flutter_modular: ^6.3.4
+  cupertino_icons: ^1.0.8
   aurasync_ui:
     path: ../aurasync_ui
 
