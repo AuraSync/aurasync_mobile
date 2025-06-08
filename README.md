@@ -27,7 +27,12 @@ Coming soon...
 
 ## 📷 Screenshots
 
-Coming soon...
+<table>
+<tr>
+  <td><img width="240" src="readme/home.png" alt="home screen"></td>
+  <td><img width="240" src="readme/sidebar.png" alt="sidebar screen"></td>
+</tr>
+</table>
 
 ## 📜 Credits
 
