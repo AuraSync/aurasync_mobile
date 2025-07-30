@@ -9,7 +9,7 @@ repository: https://github.com/ZinChat/zinchat_mobile
 
 environment:
   sdk: ^3.8.1
-  flutter: ^3.32.1
+  flutter: ^3.32.8
 
 dependencies:
   flutter:
