@@ -1,10 +1,17 @@
 {
   "cSpell.words": [
+    "allprojects",
     "aurasync",
     "cupertino",
+    "dists",
+    "jetbrains",
+    "jvmargs",
     "kotlin",
+    "Metaspace",
     "pubspec",
-    "softyes"
+    "softyes",
+    "Subproject",
+    "subprojects"
   ],
   "dart.flutterSdkPath": ".fvm/versions/stable",
   "java.configuration.updateBuildConfiguration": "disabled",
