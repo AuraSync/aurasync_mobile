@@ -3,7 +3,13 @@ part of 'root_screen.dart';
 final class RootModule extends Module {
   @override
   void exportedBinds(Injector i) {
-    i.addSingleton<ScreenWidgetController>(ScreenWidgetController.new);
+    i
+      ..addSingleton<ScreenWidgetController>(ScreenWidgetController.new)
+      ..addSingleton<RootViewModel>(
+        () => RootViewModel(
+          PermissionRepositoryImpl(PermissionService()),
+        ),
+      );
   }
 
   @override
