@@ -4,6 +4,7 @@ import 'package:aurasync/services/permission_service.dart';
 import 'package:aurasync/ui/_core/widgets/screen/screen_widget.dart';
 import 'package:aurasync/ui/_core/widgets/sidebar/sidebar_widget.dart';
 import 'package:aurasync/ui/home/home_screen.dart';
+import 'package:aurasync/ui/login/login_screen.dart';
 import 'package:aurasync/ui/root/root_view_model.dart';
 import 'package:aurasync_ui/aurasync_ui.dart';
 import 'package:flutter/material.dart';

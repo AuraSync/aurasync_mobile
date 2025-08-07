@@ -14,10 +14,12 @@ final class RootModule extends Module {
 
   @override
   void routes(RouteManager r) {
-    r.child(
-      AppRoutes.root,
-      child: (_) => const _RootScreen(),
-      children: [ModuleRoute(AppRoutes.home, module: HomeModule())],
-    );
+    r
+      ..module(AppRoutes.login, module: LoginModule())
+      ..child(
+        AppRoutes.root,
+        child: (_) => const _RootScreen(),
+        children: [ModuleRoute(AppRoutes.home, module: HomeModule())],
+      );
   }
 }
