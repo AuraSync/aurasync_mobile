@@ -7,7 +7,7 @@ plugins {
 android {
     namespace = "br.com.softyes.aurasync"
     compileSdk = 36 //flutter.compileSdkVersion
-    ndkVersion = "27.0.12077973" //flutter.ndkVersion
+    ndkVersion = "27.3.13750724" //flutter.ndkVersion
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -20,8 +20,8 @@ android {
 
     defaultConfig {
         applicationId = "br.com.softyes.aurasync"
-        minSdk = 22 //flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
+        minSdk = flutter.minSdkVersion //flutter.minSdkVersion
+        targetSdk = 36 //flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
