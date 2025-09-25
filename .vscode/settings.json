@@ -13,7 +13,7 @@
     "Subproject",
     "subprojects"
   ],
-  "dart.flutterSdkPath": ".fvm/versions/stable",
+  "dart.flutterSdkPath": ".fvm/versions/3.35.4",
   "java.configuration.updateBuildConfiguration": "disabled",
   "makefile.configureOnOpen": false
 }
