@@ -36,13 +36,13 @@ final class _LoginViewModel extends ChangeNotifier {
   }
 
   @override
-  void dispose() {
+  Future<void> dispose() async {
     discover.dispose();
     advertise.dispose();
     requestPermission.dispose();
     _authRepository.dispose();
-    _devicesSubscription?.cancel();
     _permissionRepository.dispose();
+    await _devicesSubscription?.cancel();
     super.dispose();
   }
 }

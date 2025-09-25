@@ -15,9 +15,9 @@ dependencies:
   flutter:
     sdk: flutter
 
+  command_it: ^8.0.0
   flutter_modular: ^6.3.4
   cupertino_icons: ^1.0.8
-  flutter_command: ^7.2.2
   permission_handler: ^12.0.1
   aurasync_ui:
     path: ../aurasync_ui
