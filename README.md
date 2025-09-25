@@ -18,12 +18,12 @@ Coming soon...
 [![Made with Flutter](https://img.shields.io/badge/frontend-Flutter-indigo)]((https://flutter.dev/))
 [![style: very good analysis](https://img.shields.io/badge/code_style-Very_Good_Analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
 
-* [Dart(>=3.8.1)](https://dart.dev/)
-* [Flutter(>=3.32.1)](https://flutter.dev/)
+* [Dart(>=3.9.2)](https://dart.dev/)
+* [Flutter(>=3.35.4)](https://flutter.dev/)
 
 ## 🖥️ Platforms
 
-* Android(>=5.1|SDK22) ✅
+* Android(>=6.0|SDK23) ✅
 
 ## 📷 Screenshots
 
