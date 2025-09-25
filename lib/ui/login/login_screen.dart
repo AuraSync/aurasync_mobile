@@ -35,7 +35,7 @@ final class _LoginScreenState extends State<_LoginScreen> {
 
   @override
   void dispose() {
-    _viewModel.dispose();
+    unawaited(_viewModel.dispose());
     super.dispose();
   }
 

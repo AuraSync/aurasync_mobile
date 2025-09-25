@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:aurasync_ui/aurasync_ui.dart';
 import 'package:flutter/material.dart';
 
@@ -83,11 +85,11 @@ final class _ScreenWidgetState extends State<ScreenWidget>
 
   void _controllerListener() {
     if (widget.controller?.isSidebarOpened ?? false) {
-      _controller!.forward();
+      unawaited(_controller!.forward());
       return;
     }
 
-    _controller!.reverse();
+    unawaited(_controller!.reverse());
   }
 
   @override

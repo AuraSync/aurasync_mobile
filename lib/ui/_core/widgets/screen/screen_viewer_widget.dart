@@ -16,9 +16,9 @@ final class _ScreenViewerWidget extends StatelessWidget with AppThemeMixin {
     final (colors, metrics) = getTheme(context);
     final transform = Matrix4.identity()
       ..setEntry(3, 2, 0.001)
-      ..translate(translateX.value)
+      ..translateByDouble(translateX.value, 0, 0, 1)
       ..rotateY(rotationY.value)
-      ..scale(scale.value);
+      ..scaleByDouble(scale.value, scale.value, scale.value, 1);
 
     return Transform(
       transform: transform,
